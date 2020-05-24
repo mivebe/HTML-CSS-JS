@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="simple censore.js"></script>
+    <link rel="stylesheet" href="simple censore.css">
+</head>
+
+<body>
+    <div>
+        <textarea id="userInput" class="userInput" value="" rows="12" cols="70" autofocus></textarea>
+        <div id="showcase" class="showcase"></div>
+    </div>
+    <div class="container">
+        <div id="submit" class="button">
+            <button id="submit" onclick="submitInput(userInput.value)" type="button">
+                SUBMIT</button><br /><br />
+        </div>
+        <div id="censore" class="button">
+            <button id="censore" onclick="censoreText(text, words)" type="button">
+                CENSORE</button><br /><br />
+        </div>
+        <div id="reverse" class="button">
+            <button id="censore" onclick="reverseSentence(text)" type="button">
+                REVERSE</button><br /><br />
+        </div>
+    </div>
+</body>
+
+</html>

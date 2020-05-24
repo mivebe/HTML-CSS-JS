@@ -1,0 +1,26 @@
+.container{
+    width: 50%;
+    margin: 10px;
+    float: none;
+}
+.userInput{
+    margin: 10px;
+    float: left;
+    width: 50%;
+}
+.button{
+    height: 21px;
+    float: left;
+    margin: 20px;
+}
+.showcase{
+    width: 50.5%;
+    margin: 10px;
+    border: 1px solid lightgray;
+    float:left;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

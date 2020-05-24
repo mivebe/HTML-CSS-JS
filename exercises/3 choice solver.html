@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+</style>
+
+<body>
+  <div id="reverse">
+    <button onclick="reverseFunction(userInput)" type="button">
+      Reverse</button><br /><br />
+  </div>
+  <div id="average">
+    <button onclick="averageFunction(userInput)" type="button">Average</button><br /><br />
+  </div>
+  <div id="square">
+    <button id="submit" onclick="squareFunction()" type="button">
+      Square</button><br /><br />
+  </div>
+  <div id="showcase"></div>
+  <br /><br />
+  <div>
+    <input type="number" id="userInput" name="userInput" /><br /><br />
+    <div id="input">
+      <input id="a" /> x<sup>2</sup> <input id="b" /> x <input id="c" /> = 0
+      <div id="answers">
+        <p id="DIS"></p>
+        <p id="NOS">No solutions</p>
+        <p id="S1"></p>
+        <p id="S2"></p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="3 choice solver.js"></script>
+
+</html>
