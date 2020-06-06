@@ -1,0 +1,8 @@
+.op{
+    float: left;
+    background-color: lightgray;
+    overflow: auto;
+}
+.ip{
+background-color: lightblue;
+}

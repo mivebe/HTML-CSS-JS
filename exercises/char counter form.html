@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>char counter form</title>
+  <link rel="stylesheet" href="char counter form.css">
+</head>
+
+<body>
+  <div class="op">
+    <div>
+      <textarea id="text" rows="10" cols="50"></textarea>
+    </div>
+  </div>
+  <div class="op">
+    <div id="symbolsLeft"></div>
+    <div id="lastKey"></div>
+  </div>
+  <div id="form" class="op">
+    <div>
+      <div>
+        <label for="sub">Pick a subscription plan:</label>
+        <select id="sub" name="sub">
+          <option value="dayly">Daily $2</option>
+          <option value="weekly">Weekly $10</option>
+          <option value="monthly">Monthly $40</option>
+          <option value="yearly">Yearly $400</option>
+        </select>
+      </div>
+      <div id="subMessage"></div>
+    </div>
+    <div>
+      <div id="terms">
+        <input type="checkbox">
+        <label>You must agree to the terms of service.</label><br>
+      </div>
+      <div id="termsMessage"></div>
+    </div>
+  </div>
+
+
+</body>
+<script src="char counter form.js"></script>
+
+</html>
