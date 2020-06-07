@@ -1,8 +1,23 @@
 .op{
-    float: left;
     background-color: lightgray;
     overflow: auto;
 }
 .ip{
-background-color: lightblue;
+    float: left;
+    margin-left: 5px;
+background-color:lightgray;
+}
+.bad{
+    background-color: lightcoral;
+}
+.good{
+    background-color: lightgreen;
+}
+.warning{
+    background-color: yellow;
+    float: none;
+}
+#submit{
+    float: none;
+    margin: 60px 0px 0px -270px;
 }

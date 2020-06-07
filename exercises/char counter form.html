@@ -15,11 +15,11 @@
     </div>
   </div>
   <div class="op">
-    <div id="symbolsLeft"></div>
-    <div id="lastKey"></div>
+    <div id="symbolsLeft" class="ip"></div>
+    <div id="lastKey" class="ip"></div>
   </div>
   <div id="form" class="op">
-    <div>
+    <div class="ip">
       <div>
         <label for="sub">Pick a subscription plan:</label>
         <select id="sub" name="sub">
@@ -29,15 +29,16 @@
           <option value="yearly">Yearly $400</option>
         </select>
       </div>
-      <div id="subMessage"></div>
+      <div id="subMessage" class="warning"></div>
     </div>
-    <div>
+    <div class="ip">
       <div id="terms">
         <input type="checkbox">
         <label>You must agree to the terms of service.</label><br>
       </div>
-      <div id="termsMessage"></div>
+      <div id="termsMessage" class="bad"></div>
     </div>
+    <button id="submit" type="submit">Submit</button>
   </div>
 
 
