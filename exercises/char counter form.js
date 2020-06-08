@@ -24,7 +24,7 @@ function subscription() {
 }
 function checkbox(event) {
     console.log("aaaa");
-    if (!elTerms.checked) {
+    if (!document.getElementById("terms").checked) {
         console.log("ssss");
         document.getElementById("termsMessage").innerHTML = "Agree to the terms!";
         event.preventDefault();
