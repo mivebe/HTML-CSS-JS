@@ -47,3 +47,22 @@ body {
 .tab-panels .panel.active {
     display:block;
 }
+#slider{
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+}
+#slider .slides{
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+#slider .slide{
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
