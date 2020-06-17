@@ -1,0 +1,28 @@
+div[id="eVContainer"]{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    border: rgba(0, 0, 0, .05) solid 2px;
+    overflow: none;
+}
+div[id="eVContainer"] > *:not(:last-child) {
+    display: block;
+    margin: 50px;
+}
+div[id="eVContainer"] a{
+    display: inline-block;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-color:#17bebb;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
