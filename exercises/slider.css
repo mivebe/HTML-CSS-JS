@@ -86,23 +86,8 @@ background-color: rgba(0,0,0,0.3);
 
 }
 
-.slideIn{
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
-}
-
-@-webkit-keyframes slide {
-  100% { left: 0; }
-}
-
-@keyframes slide {
-  100% { left: 0; }
-}
-
 /* Fading animation */
-/*.fade {
+.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -117,7 +102,7 @@ background-color: rgba(0,0,0,0.3);
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}*/
+}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {

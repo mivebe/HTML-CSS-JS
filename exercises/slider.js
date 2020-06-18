@@ -1,6 +1,11 @@
 var slideIndex = 1;
-var interval = setInterval(() => { }, 3000)
+var interval;
+var slideshowContainer = document.getElementsByClassName("slideshow-container")[0];
 showSlides(slideIndex);
+playSlideshow();
+
+slideshowContainer.addEventListener("mouseover", () => { pauseSlideshow(); }, false);
+slideshowContainer.addEventListener("mouseout", () => { playSlideshow(); }, false);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -8,6 +13,17 @@ function plusSlides(n) {
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
+}
+
+function playSlideshow() {
+    interval = setInterval(() => {
+        slideIndex++;
+        showSlides(slideIndex);
+    }, 3000);
+}
+
+function pauseSlideshow() {
+    clearInterval(interval);
 }
 
 function showSlides(n) {
