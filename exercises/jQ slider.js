@@ -11,13 +11,14 @@ $(function () {
     var interval;
     function playSlider() {
         interval = setInterval(function () {
-            $slideContainer.animate({ "margin-left": "-=" + width }, animationSpeed, function () {
-                counter++;
-                if (counter === $slides.length) {
-                    counter = 1;
-                    $slideContainer.css("margin-left", 0);
-                }
-            });
+            $slideContainer.animate({ "margin-left": "-=" + width },
+                animationSpeed, function () {
+                    counter++;
+                    if (counter === $slides.length) {
+                        counter = 1;
+                        $slideContainer.css("margin-left", 0);
+                    }
+                });
         }, animationInterval);
     }
     function pauseSlider() {
