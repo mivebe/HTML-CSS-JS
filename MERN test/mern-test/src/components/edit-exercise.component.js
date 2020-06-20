@@ -99,7 +99,7 @@ export default class EditExercise extends Component {
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Username: </label>
-                        <select ref="userInput"
+                        <select useref="userInput"
                             required
                             className="form-control"
                             value={this.state.username}
