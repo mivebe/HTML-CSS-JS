@@ -8,11 +8,14 @@ let test = [
 ];
 let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(test, 0);
+
 const input1 = gets().split(' ').map(x => +x);
 const current = gets().split(' ').map(x => +x);
+
 let counter = 1;
 const arr = [];
 const cache = [];
+
 for (let i = 0; i < input1[0]; i++) {
     arr.push([]);
     cache.push([]);
@@ -22,10 +25,12 @@ for (let i = 0; i < input1[0]; i++) {
         counter++;
     }
 }
+
 const jumps = [];
 for (let i = 0; i < input1[2]; i++) {
     jumps.push(gets().split(' ').map(x => +x))
 }
+
 let result = arr[current[0]][[current[1]]];
 let check = true;
 while (check) {
