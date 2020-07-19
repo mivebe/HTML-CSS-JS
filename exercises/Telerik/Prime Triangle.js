@@ -8,15 +8,11 @@ const isPrime = num => {
         if (num % i === 0) return false;
     return num > 0;
 }
-const trim = str => {
-    return str.replace(/^\s+|\s+$/gm, '');
-}
-
 let arr = [];
 const printOut = arr => {
     for (let i = 1; i <= test; i++) {
+        arr.push([]);
         if (isPrime(i) === true) {
-            arr.push([]);
             for (let j = 1; j <= i; j++) {
                 isPrime(j) ? arr[i - 1] += "1" : arr[i - 1] += "0";
             }
@@ -24,7 +20,6 @@ const printOut = arr => {
     }
 }
 printOut(arr);
+arr = arr.filter((x) => { return x.length });
 result = arr.join("\n");
-
-print(arr);
 print(result);
