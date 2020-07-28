@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: rebeccapurple;
+    padding: 2px 50px;
+    height: 83px;
+    font-size: 50px;
+}
+a {
+    color: silver;
+    padding: 3px;
+    margin-right: 25px;
+    text-decoration: none;
+    font-family: "rockwell";
+    position: relative;
+    top: 8px; 
+}
+a:hover {
+    background-color: silver;
+    color: rebeccapurple;
+    border-radius: 10px;
+}
+body {
+    background-color: grey;
+}
+#submit-gif {
+    position: relative;
+}
+#main {
+    position: relative;
+    padding-top: 60px;
+    text-align: -webkit-center;
+}
+.displayed-gif {
+    padding: 4px;
+}
+#form-upload {
+    padding: 0px 10px;
+    background: rebeccapurple;
+    border: 2px solid silver;
+    position: relative;
+    color: #f2e6ff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 485px;
+    margin-left: 430px;
+}
+#input-upload{
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 24px;
+    width: 100%;
+}
+#upload-gif-button{
+    font-family: "rockwell";
+    padding: 4px;
+    border-radius: 10px;
+    border: 2px solid rebeccapurple;
+    background-color: #f2e6ff;
+    font-size: 25px;
+    font-weight: bold;
+    color: rebeccapurple;
+    position: relative;
+    left: 376px;
+}
+#upload-gif-button:hover{
+    background-color: rebeccapurple;
+    color: #f2e6ff;
+}
+label {
+    position: absolute;
+    right: 152px;
+    top: 7px;
+    font-size: 23px;
+    font-family: "rockwell";
+    font-weight: 700;
+}
+
+#input-upload {
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 24px;
+    width: 100%;
+}
+[type=submit]{
+    border-radius: 10px;
+    color: rebeccapurple;
+    padding: 8px;
+    border: 2px solid silver;
+    font-family: "rockwell";
+    font-weight: 700;
+}
+#searchInput{
+    font-weight: 700;
+    padding: 9px;
+    border-radius: 13px;
+    border: 2px solid silver;
+}
+::-webkit-input-placeholder { 
+    color: silver;
+    font-family: "rockwell";
+}
+#single-gif-info{position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    margin-left: 34%;
+    margin-top: 8%;
+    background-color: cornflowerblue;
+    padding: 4%;
+    border-radius: 5%;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 7px;
+}
+text {
+    font-family: "rockwell";
+}
