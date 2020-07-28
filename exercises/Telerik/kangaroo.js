@@ -12,6 +12,8 @@ let gets = this.gets || ((arr, index) => () => arr[index++])(test, 0);
 const input1 = gets().split(' ').map(x => +x);
 const current = gets().split(' ').map(x => +x);
 
+console.log(input1, current)
+
 let counter = 1;
 const arr = [];
 const cache = [];
@@ -30,6 +32,7 @@ const jumps = [];
 for (let i = 0; i < input1[2]; i++) {
     jumps.push(gets().split(' ').map(x => +x))
 }
+console.log(jumps)
 
 let result = arr[current[0]][[current[1]]];
 let check = true;
@@ -55,12 +58,3 @@ while (check) {
         };
     });
 }
-
-
-
-
-
-
-
-
-

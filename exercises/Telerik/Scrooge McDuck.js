@@ -1,12 +1,13 @@
 let test = [
     4, 3,
-    "3 2 4",
+    "3 4 4",
     "2 0 3",
     "1 1 5",
     "2 2 5"
 ];
-let print = this.print || console.log;
-let gets = this.gets || ((arr, index) => () => arr[index++])(test, 0);
+
+let print = this.print && console.log;
+let gets = this.gets && ((arr, index) => () => arr[index++])(test, 0);
 
 function createField(test) {
     let field = [];
@@ -22,17 +23,16 @@ function createField(test) {
     return field;
 }
 let field = createField(test);
-let start = [];
 
 //determine starting position
+let start = [];
 for (let i = 0; i < field.length; i++) {
     for (let j = 0; j < field[i].length; j++) {
         if (field[i][j] == 0) {
-            start = [(field.indexOf(field[i])) + 1, (field[i].indexOf(field[i][j])) + 1];
+            start = [(field.indexOf(field[i])), (field[i].indexOf(field[i][j]))];
         }
     }
 }
-
 //pad the field with zeros to skip array out of bonds check
 for (let k = 0; k < field.length; k++) {
     field[k].push(0);
@@ -44,53 +44,121 @@ for (let l = 0; l < field[1].length; l++) {
     field[(field.length) - 1].push(0);
     field[0].push(0);
 }
+//fix starting position
+start[0]++; start[1]++;
 
 
-//function move(field, start) {
-//take adjacent values
-let left, right, up, down, currentX = start[0], currentY = start[1];
-left = field[currentX - 1][currentY];
-right = field[currentX + 1][currentY];
-up = field[currentX][currentY - 1];
-down = field[currentX][currentY + 1];
-//sort them
-let arr = [left, right, up, down];
-highest = Math.max(left, right, up, down);
-arr.filter((x) => { return x = highest });
-asd = [];
-choices = arr.map((value, index, arr) => {
-    return asd = [index, value];
-})
-print(choices);
-//check for duplicates
-//move by order if duplicate or move to highest if none
-//record actions
-//}
 
+let left, right, up, down,
+    X = start[1],
+    Y = start[0];
+left = field[X][Y - 1];
+right = field[X][Y + 1];
+up = field[X - 1][Y];
+down = field[X + 1][Y];
+let coins = 0;
 
-/*spot = field.map((value, indexR, arr) => {
-    let indexC = arr.map((value, indexC, arr) => {
-        if (value === 0) {
-            return indexC;
-        }
-    }, "fail");
-    let container = [indexR, indexC];
-    return container;
-}, "fail");
-*/
+while ((left + right + up + down) !== 0) {
 
-/*
-spot = field.filter((value, index, arr) => {
-    if (value === 0) {
-        let container = [field.indexOf(arr), index];
-        return container;
-    } else {
-        return NaN;
+    if (down == 0) {
+
+    } else if (down > up && down > right && down > left) {
+        //go down
+        field[X + 1][Y]--;
+        coins++;
+        X++;
+    } else if (down == left && left !== 0) {
+        //go left
+        field[X][Y - 1]--;
+        coins++;
+        Y--;
+    } else if (down == right && right !== 0) {
+        //go right
+        field[X][Y + 1]--;
+        coins++;
+        Y++;
+    } else if (down == up && up !== 0) {
+        //go up
+        field[X - 1][Y]--;
+        coins++;
+        X--;
     }
-}, "");
-*/
+
+    if (up == 0) {
+
+    } else if (up > down && up > right && up > left) {
+        //go up
+        field[X - 1][Y]--;
+        coins++;
+        X--;
+    } else if (up == left && left !== 0) {
+        //go left
+        field[X][Y - 1]--;
+        coins++;
+        Y--;
+    } else if (up == right && right !== 0) {
+        //go right
+        field[X][Y + 1]--;
+        coins++;
+        Y++;
+    } else if (up == down && down !== 0) {
+        //go up
+        field[X - 1][Y]--;
+        coins++;
+        X--;
+    }
+
+    if (right = 0) {
+
+    } else if (right > up && right > down && right > left) {
+        //go right
+        field[X][Y + 1]--;
+        coins++;
+        Y++;
+    } else if (right == left && left !== 0) {
+        //go left
+        field[X][Y - 1]--;
+        coins++;
+        Y--;
+    } else if (right == up && up !== 0) {
+        //go right
+        field[X][Y + 1]--;
+        coins++;
+        Y++;
+    } else if (right == down && down !== 0) {
+        //go right
+        field[X][Y + 1]--;
+        coins++;
+        Y++;
+    }
+
+    if (left = 0) {
+
+    } else if (left > up && left > right && left > down) {
+        //go left
+        field[X][Y - 1]--;
+        coins++;
+        Y--;
+    } else if (left == right && right !== 0) {
+        //go left
+        field[X][Y - 1]--;
+        coins++;
+        Y--;
+    } else if (left == up && up !== 0) {
+        //go left
+        field[X][Y - 1]--;
+        coins++;
+        Y--;
+    } else if (left == down && down !== 0) {
+        //go left
+        field[X][Y - 1]--;
+        coins++;
+        Y--;
+    }
+}
 
 
-print(field);
-//print(spot);
-print(start);
+console.log(field);
+console.log(left, right, up, down);
+console.log(start);
+console.log(coins);
