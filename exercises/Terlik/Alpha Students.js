@@ -1,5 +1,5 @@
 test = [7, 4,
-    "Emo Misho Ivanka Ginka 3324   [];'/./, Vancho Stancho Sashka",
+    "Emo Misho Ivanka Ivanka Ginka 3324 3324  [];'/./, Vancho Vancho Stancho Sashka",
     "Emo Misho",
     "Misho Emo",
     "Misho Sashka",
@@ -8,11 +8,12 @@ const isLetters = (inputtxt) => {
     let letters = /^[A-Za-z]+$/;
     return (inputtxt.match(letters) ? true : false);
 };
-const people = test[2].split(" ").filter((el) => {
+let people = test[2].split(" ").filter((el) => {
     if (isLetters(el)) {
         return el;
     }
 });
+people = [...new Set(people)];
 class Node {
     constructor(value, prev, next) {
         this.value = value;
@@ -46,7 +47,6 @@ for (let i = 3; i < test.length; i++) {
     } else if (firstRight == null && firstLeft != null) {
         firstLeft.next = null;
     };
-
     if (secoundLeft != null) {
         secoundLeft.next = first.value;
         first.prev = secoundLeft.value;
