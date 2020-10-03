@@ -63,6 +63,6 @@ while (true) {
     col = maxNextCol;
     matrix[row][col]--;
     coins++;
-}
+};
 
 print(coins);
