@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google" content="notranslate">
+    <title>MiVeBe's SeeThrough</title>
+    <link rel="icon" type="image/png" href="image/fav.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script src="./awpx_click.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="sunduk"><img src="image/sunduk.png" alt="sunduk"></div>
+        <div class="logo"><img src="image/logo.png" alt="logo"></div>
+        <div class="access"><img src="image/access.png" alt="access"></div>
+        <div class="notice"><img src="image/notice.png" alt="notice"></div>
+        <div class="girl">
+            <div class="girl-wrapper">
+                <div class="girl-layer1"><img src="image/girl1.png" alt="girl"></div>
+                <div class="girl-layer2"><img src="image/girl2.png" alt="girl"></div>
+                <div class="girl-layer3">
+                </div>
+                <div class="target"></div>
+            </div>
+        </div>
+        <div class="keys">
+            <div class="keys-wrapper key-wrapper_on">
+                <div class="keys-block kb1"><img src="image/key_black.png" alt="key"><img src="image/key_light.png"
+                        alt="klight" class="img-key-light"><img src="image/key_gold.png" alt="key" class="img-key-gold">
+                </div>
+                <div class="keys-block kb2"><img src="image/key_black.png" alt="key"><img src="image/key_light.png"
+                        alt="klight" class="img-key-light img-key-light-reverse"><img src="image/key_gold.png" alt="key"
+                        class="img-key-gold"></div>
+                <div class="keys-block kb3"><img src="image/key_black.png" alt="key"><img src="image/key_light.png"
+                        alt="klight" class="img-key-light"><img src="image/key_gold.png" alt="key" class="img-key-gold">
+                </div>
+            </div>
+        </div>
+        <div class="keys-field key-field1">
+            <div class="kf-wrapper"><img src="image/key_field_find.png" alt="key"><img src="image/key_field_non.png"
+                    alt="key"></div>
+        </div>
+        <div class="keys-field key-field2">
+            <div class="kf-wrapper"><img src="image/key_field_find.png" alt="key"><img src="image/key_field_non.png"
+                    alt="key"></div>
+        </div>
+        <div class="button"><img src="image/btn_hover.png" alt="btn"></div>
+        <div class="lupa"><img src="image/lupa.png" alt="lupa"></div><a href="#" onclick="redirect(event)"
+            class="redirect AdWheelClick"></a>
+    </div>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript">
+        var fin_link = decodeURIComponent(getURLParameter('p1'));
+
+        function getURLParameter(name) {
+            return decodeURIComponent(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || '');
+        }
+
+        function redirect(event) {
+            event.preventDefault();
+            window.location.href = fin_link;
+        }
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter47880065 = new Ya.Metrika2({
+                        id: 47880065,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/47880065" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#77dd77;
+  }
+  div .hui{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    border:5px solid white;
+  }
+
+  #asd{
+      position: absolute;
+  }
+  #bg{
+      position: absolute;
+  }
