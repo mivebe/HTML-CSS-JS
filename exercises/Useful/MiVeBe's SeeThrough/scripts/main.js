@@ -1,15 +1,17 @@
 "use strict";
 window.onload = function () {
-    var e = !1
-        , i = !1
-        , o = !1
-        , t = !1
-        , n = 0
-        , s = $(".girl").offset().top
-        , l = $(".girl").offset().left
-        , a = $(".girl").width()
-        , c = $(".girl").height()
-        , r = $(".girl-layer3");
+
+    var e = !1,
+        i = !1,
+        o = !1,
+        t = !1,
+        n = 0,
+        s = $(".girl").offset().top,
+        l = $(".girl").offset().left,
+        a = $(".girl").width(),
+        c = $(".girl").height(),
+        r = $(".girl-layer3");
+
     function d() {
         console.log(n),
             n >= 3 && (t = !1,
@@ -22,6 +24,7 @@ window.onload = function () {
                         $(".notice img").css("opacity", 0)
                 }, 800))
     }
+
     console.log(l),
         $(document).on("mousemove", function (e) {
             var i = e.originalEvent.clientX || e.originalEvent.layerX || e.originalEvent.x
@@ -38,11 +41,13 @@ window.onload = function () {
                     top: "-100%",
                     left: "-100%"
                 });
+
             $(".lupa").css({
                 top: o - $(".lupa").height() / 2 + "px",
                 left: i - $(".lupa").width() / 1.4 + "px"
             })
         }),
+
         $(".key-field1").on("mouseover", function () {
             t && ($(".keys-block").eq(0).addClass("keys-block_active"),
                 0 == e && (e = !0,
@@ -50,6 +55,7 @@ window.onload = function () {
                     n++,
                     d()))
         }),
+
         $(".key-field2").on("mouseover", function () {
             t && ($(".keys-block").eq(1).addClass("keys-block_active"),
                 $(this).addClass("key-field2_active"),
@@ -57,14 +63,16 @@ window.onload = function () {
                     n++,
                     d()))
         }),
+
         $(".target").on("mouseover", function () {
             t && ($(".keys-block").eq(2).addClass("keys-block_active"),
                 0 == o && (o = !0,
                     n++,
                     d()))
         }),
-        setTimeout(function () {
-            t = !0
-        }, 1e3)
-}
-    ;
+
+        setTimeout(
+            function () {
+                t = !0
+            }, 1e3)
+};
