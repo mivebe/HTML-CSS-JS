@@ -121,6 +121,7 @@
         "before": false,
         "after": false,
         "module": false,
-        "$": false
+        "$": false,
+        "toastr": false
     }
 }

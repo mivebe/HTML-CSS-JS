@@ -40,6 +40,13 @@ const displayFavouriteGifsByClick = (callback) => $(document).on('click', '#my-f
  * @return { event } An event, binded to the target.
  */
 const displayUploadInputByClick = (callback) => $(document).on('click', '#upload', callback);
+
+/**
+ * Binds an event handler to element with id "upload".
+ * @return { void } An pop-up notification, when the input with type "file" is changed.
+ */
+const changeFileInput = () => $(document).on('change', '#input-upload', () => toastr.success('Yaay!', 'You have selected your GIF!'));
+
 /**
  * Binds an event handler to element with id "upload-gif-button".
  * @param { function } callback Function describing what should be done when the target is clicked.
@@ -53,6 +60,26 @@ const uploadGifByClick = (callback) => $(document).on('click', '#upload-gif-butt
  */
 const displayMyUploadsByClick = (callback) => $(document).on('click', '#my-uploads', callback);
 
+/**
+ * Binds an event handler to the document object.
+ * @param { function } callback Function describing what should be done when the target is clicked.
+ * @return { event } An event, binded to the target.
+ */
+const clickAnywhereOnDocument = (callback) => $(document).on('click', callback);
+
+/**
+ * Binds an event handler to the window object.
+ * @param { function } callback Function describing what should be done when the target is clicked.
+ * @return { event } An event, binded to the target.
+ */
+const loadMoreWhenScrolling =(callback) => $(window).on('scroll', callback);
+
+/**
+ * Binds an event handler to the element with class "displayed-gif-no-click".
+ * @param { function } callback Function describing what should be done when the target is clicked.
+ * @return { event } An event, binded to the target.
+ */
+const doubleClickLike = (callback) => $(document).on('dblclick', '.displayed-gif-no-click', callback);
 
 export {
   displayTrendingGifsByClick,
@@ -61,6 +88,10 @@ export {
   favouriteGifByClick,
   displayFavouriteGifsByClick,
   displayUploadInputByClick,
+  changeFileInput,
   uploadGifByClick,
   displayMyUploadsByClick,
+  clickAnywhereOnDocument,
+  loadMoreWhenScrolling,
+  doubleClickLike
 };

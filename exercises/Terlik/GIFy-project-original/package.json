@@ -17,7 +17,10 @@
     "url": "https://gitlab.com/Vasil_Mitev97/giphy-project/issues"
   },
   "homepage": "https://gitlab.com/Vasil_Mitev97/giphy-project#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/toastr": "^2.1.38",
+    "toastr": "^2.1.4"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.5.0",
