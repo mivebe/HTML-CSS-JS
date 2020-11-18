@@ -1,3 +1,31 @@
+// Longest Block in String
+
+// Description
+
+// A block in a string is a run of adjacent chars that are the same.
+// Given a string, return the first substring that is with the length of the largest "block" in the string.
+
+// Input
+
+// Read from the standart input:
+// string to search in -> hoopla
+
+// Output
+
+// Print to the standart output:
+
+// One line of output - the first block with maximum length in the given array -> oo
+// please note that it is case sensitive.
+
+// Sample Tests
+
+// Input
+
+// hoopla
+
+// Output
+
+// oo
 let test = "hooopla";
 
 let print = this.print || console.log;
