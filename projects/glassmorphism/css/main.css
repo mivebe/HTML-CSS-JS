@@ -1,0 +1,60 @@
+body {
+  background: lightblue;
+  color: white;
+  margin: 0;
+  padding: 20em 20em 20em 20em;
+}
+
+img {
+  position: absolute;
+  height: 40vh;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.circle {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 400px;
+  height: 400px;
+  background: magenta;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.container {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3em;
+  border-radius: 3em;
+  position: relative;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(46, 54, 68, 0.05);
+          box-shadow: 10px 10px 10px 10px rgba(46, 54, 68, 0.05);
+}
+
+.container h2 {
+  font-size: 1.7em;
+}
+
+.container h1, .container h2 {
+  margin: 0;
+}
+
+.container p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}
+/*# sourceMappingURL=main.css.map */
