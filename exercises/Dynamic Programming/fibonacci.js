@@ -1,4 +1,8 @@
-
+//Write a function "fib(n)" that takes in a number as an argument.
+//The function should return the n-th number of the Fibonacci sequence.
+//The 0th number of the sequence is 0.
+//The 1st number of the sequence is 1.
+//To generate the next number of the sequence, sum the previous two.
 
 // classic recursion  
 
@@ -12,7 +16,7 @@ console.log(fib(8));
 console.log(fib(10));
 //console.log(fib(50)); // 85.932 sec
 
-
+// memoized recursion
 
 const fib1 = (n, memo = {}) => {
     if (n in memo) return memo[n]
@@ -26,7 +30,7 @@ console.log(fib1(8));
 console.log(fib1(10));
 console.log(fib1(50)); // 0.091 sec
 
-
+//tabulation solution
 
 const fib2 = (n) => {
     const table = Array(n + 1).fill(0);
