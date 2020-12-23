@@ -1,0 +1,31 @@
+.teachers_dashboard {
+  display: flex;
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  padding-top: 6px;
+}
+
+.teachers_dashboard_categories {
+  width: 50vw;
+  height: 100vh;
+  background-color: rgba(116, 72, 113, 0);
+  text-align: center;
+}
+
+.teachers_dashboard_right_part {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+}
+
+.teachers_dashboard_leaderboard {
+  height: 50vh;
+  text-align: center;
+  background-color: rgba(235, 231, 236, 0);
+}
+
+.teachers_dashboard_history {
+  height: 50vh;
+  text-align: center;
+  background-color: rgba(212, 202, 214, 0);
+}

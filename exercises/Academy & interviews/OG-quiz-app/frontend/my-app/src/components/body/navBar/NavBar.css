@@ -1,0 +1,87 @@
+.nav_bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+  background-image: linear-gradient(to top, #fef9d7 0%, #d299c26c 100%);
+  padding: 1%;
+  padding-top: 30px;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  border-bottom: solid gainsboro 2px;
+}
+
+.nav_bar_logout_button {
+  background-color: #e1acec10;
+  color: #551bc1c9;
+  outline: none;
+  border: none;
+  font-size: 1.1vw;
+  font-family: 'Nunito', sans-serif;
+  align-items: center;
+  border-radius: 20px;
+  width: 10vw;
+  margin: auto;
+  border: solid gainsboro 1px;
+}
+.nav_bar_logout_button:hover {
+  background-color: #f1a9ff44;
+  font-size: 1.2vw;
+  color: #3b0e8f;
+}
+
+.nav_bar_button {
+  font-size: 1.4vw;
+  border: none;
+  border-radius: 16px;
+  border-bottom: solid gainsboro 2px;
+  background-color: #f1a9ff00;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  height: 5.5vh;
+  max-height: 10vh;
+  width: 15vw;
+  color: #551bc1c9;
+  outline: none;
+}
+
+.nav_bar_button:hover {
+  background-color: #f1a9ff44;
+  font-size: 1.5vw;
+  color: #3b0e8f;
+}
+
+.nav_bar_message {
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  max-height: 10vh;
+  width: 22vw;
+  color: #551bc1a1;
+  background-color: #f1a9ff09;
+  border: none;
+  border-radius: 20px;
+  border-bottom: solid gainsboro 1px;
+}
+
+.nav_bar_message h2 {
+  margin: 0;
+  font-size: 1.2vw;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.nav_bar_message p {
+  margin: 0;
+  font-size: 1.4vw;
+  font-weight: 700;
+  margin-bottom: 0.2%;
+  color: #541bc1;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}

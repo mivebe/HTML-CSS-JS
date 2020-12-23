@@ -1,0 +1,72 @@
+.categories_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.category {
+  height: 8vh;
+  width: 50vw;
+  border-bottom: rgba(156, 143, 143, 0.507) solid 2px;
+  font-size: 1.3vw;
+  display: flex;
+}
+
+.categories_header {
+  border-bottom: solid gainsboro 2px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(197, 179, 212, 0.151);
+  width: 25vw;
+  margin: 0 auto;
+  margin-top: 6px;
+  border-radius: 10px;
+  color: #551bc1c9;
+  margin-bottom: 14px;
+}
+
+.category_el {
+  width: -webkit-fill-available;
+}
+
+.category button {
+  font-size: 20px;
+  width: fit-content;
+  margin-right: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  background-color: rgba(197, 179, 212, 0);
+  color: #551bc1c9;
+  font-weight: 600;
+  border-radius: 20px;
+  outline: none;
+  border-bottom: solid rgba(0, 0, 0, 0.253) 2px;
+}
+
+.category button:hover {
+  background-color: #f1a9ff44;
+  font-size: 21px;
+  color: #3b0e8f;
+}
+
+.category div {
+  padding-top: 16px;
+  color: #020202b6;
+  font-weight: 400;
+}
+.scrollable {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 79vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 30px;
+  background-color: rgba(0, 255, 255, 0.164);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(12, 102, 161, 0.24);
+}

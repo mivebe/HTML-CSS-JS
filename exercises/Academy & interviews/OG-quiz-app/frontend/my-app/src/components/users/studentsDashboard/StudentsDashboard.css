@@ -1,0 +1,31 @@
+.student_dashboard {
+  display: flex;
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  padding-top: 6px;
+}
+
+.students_dashboard_categories {
+  width: 50vw;
+  height: 100vh;
+  background-color: rgba(83, 45, 81, 0);
+  text-align: center;
+}
+
+.students_dashboard_right_part {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+}
+
+.students_dashboard_leaderboard {
+  height: 50vh;
+  text-align: center;
+  background-color: rgba(71, 9, 90, 0);
+}
+
+.students_dashboard_history {
+  height: 50vh;
+  text-align: center;
+  background-color: rgba(126, 65, 143, 0);
+}

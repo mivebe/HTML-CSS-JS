@@ -1,0 +1,36 @@
+.simple_leaderboard_conteiner {
+  padding-bottom: 14px;
+}
+
+.simple_leaderboard_header {
+  font-size: 28px;
+  border-bottom: solid gainsboro 2px;
+  background-color: rgba(197, 179, 212, 0.151);
+  width: 25vw;
+  margin: 0 auto;
+  margin-top: 6px;
+  border-radius: 10px;
+  color: #551bc1c9;
+  margin-bottom: 14px;
+}
+
+.simple_leaderboard_explanations_conteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.simple_leaderboard_explanations_conteiner span {
+  width: -webkit-fill-available;
+  font-size: 20px;
+  margin-bottom: 7px;
+  font-weight: 500;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.scrollable_simple_leaderboard {
+  overflow-y: scroll;
+  height: 40vh;
+}

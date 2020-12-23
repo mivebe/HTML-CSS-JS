@@ -1,0 +1,52 @@
+.quiz_view_for_teacher_container {
+  height: 100vh;
+  background-image: linear-gradient(to top, #dda7cfbe 0%, #fef9d7 100%);
+  padding-top: 6px;
+}
+
+.quiz_view_for_teacher_header {
+  width: 30vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28px;
+  border-bottom: solid gainsboro 2px;
+  background-color: rgba(197, 179, 212, 0.151);
+  border-radius: 10px;
+  border-radius: 10px;
+  color: #551bc1c9;
+  margin-bottom: 14px;
+}
+
+.quiz_view_for_teacher_explanations_container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.quiz_view_for_teacher_explanations_container span {
+  width: -webkit-fill-available;
+  text-align: center;
+}
+
+.quiz_view_for_teacher_entries_container {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.quiz_view_for_teacher_entry {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6px;
+}
+
+.quiz_view_for_teacher_entry span {
+  width: -webkit-fill-available;
+  background-color: rgba(172, 120, 221, 0.068);
+  border-bottom: solid rgba(0, 0, 0, 0.055) 2px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: x-large;
+  padding: 4px;
+}

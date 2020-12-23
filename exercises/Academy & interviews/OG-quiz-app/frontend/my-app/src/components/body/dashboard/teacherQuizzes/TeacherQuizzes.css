@@ -1,0 +1,43 @@
+.teacher_quizzes_explanations_conteiner {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.teacher_quizzes_header {
+  font-size: 28px;
+  color: #551bc1c9;
+  border-bottom: solid rgba(0, 0, 0, 0.103) 2px;
+  background-color: rgba(197, 179, 212, 0.233);
+  border-radius: 10px;
+  width: 25vw;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.simple_quiz_view_conteiner {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2px;
+}
+
+.simple_quiz_view_conteiner span {
+  width: -webkit-fill-available;
+  background-color: rgba(152, 90, 209, 0.041);
+  border-bottom: solid rgba(0, 0, 0, 0.103) 2px;
+  font-size: larger;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.scrollable_teacher_quizzes {
+  overflow-y: scroll;
+  height: 36vh;
+}

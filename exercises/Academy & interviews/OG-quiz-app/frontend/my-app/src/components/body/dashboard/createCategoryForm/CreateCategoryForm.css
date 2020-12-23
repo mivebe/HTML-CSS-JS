@@ -1,0 +1,54 @@
+.create_category_form_container {
+  text-align: center;
+  /* padding-bottom: 8%; */
+  /* padding-left: 8%;
+  padding-right: 8%; */
+  background-color: rgba(245, 245, 245, 0);
+  height: 39vh;
+}
+
+.create_category_form_header {
+  color: #551bc1c9;
+  border-bottom: solid gainsboro 2px;
+  background-color: rgba(197, 179, 212, 0.151);
+  border-radius: 10px;
+  width: 25vw;
+  margin: 0 auto;
+  margin-top: 6px;
+}
+
+.create_category_form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.create_category_form_input {
+  text-align: center;
+  border: none;
+  height: 6.5vh;
+  font-size: x-large;
+  border-radius: 5px;
+  outline: none;
+}
+
+.create_category_form_button {
+  margin-top: 10px;
+  height: 5.5vh;
+  font-size: x-large;
+  border: none;
+  border-radius: 16px;
+  border-bottom: solid rgba(5, 5, 5, 0.377) 2px;
+  color: #551bc1c9;
+  background-color: #f1a9ff00;
+  font-weight: 700;
+  outline: none;
+}
+
+.create_category_form_button:hover {
+  background-color: #f1a9ff44;
+  font-size: 1.4vw;
+  color: #3b0e8f;
+}

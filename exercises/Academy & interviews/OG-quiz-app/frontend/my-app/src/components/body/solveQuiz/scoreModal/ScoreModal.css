@@ -1,0 +1,37 @@
+.solve_quiz_score_modal_conteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.solve_quiz_score_modal {
+  position: absolute;
+  width: 30vw;
+  height: 20vh;
+  background-color: rgba(23, 28, 32, 0.774);
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  color: whitesmoke;
+  border-radius: 30px;
+  padding: 6px;
+  text-align: center;
+  top: 40%;
+}
+.solve_quiz_score_modal p {
+  font-size: larger;
+}
+
+.solve_quiz_score_modal button {
+  font-weight: 500;
+  font-size: large;
+  width: 12vw;
+  height: 5vh;
+  background-color: rgba(170, 170, 170, 0.397);
+  border: solid rgba(128, 128, 128, 0.349) 1px;
+  border-radius: 16px;
+  outline: none;
+  color: whitesmoke;
+  margin-top: 6px;
+}
+
+.solve_quiz_score_modal button:hover {
+  background-color: rgba(150, 150, 150, 0.322);
+}
