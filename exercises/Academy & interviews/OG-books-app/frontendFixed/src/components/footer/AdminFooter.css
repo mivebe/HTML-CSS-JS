@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 60px;
+  align-items: center;
+  background-color: #bebebe;
+  bottom: 0;
+  z-index: 100;
+  
+       position: fixed;
+    width: -webkit-fill-available;
+   
+}
+.footer-link{
+
+ text-decoration: none;
+
+}
+.footer_about_us{
+  text-decoration: none;
+}

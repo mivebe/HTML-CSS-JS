@@ -1,0 +1,53 @@
+.notLogedInHome {
+  background-image: url('./homeImage/homePage2.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'BigNoodleTitling';
+}
+
+.container {
+  display: flex;
+  display: inline-block;
+  color: rgb(230, 221, 221);
+  background-color: rgba(0, 0, 0, 0.438);
+  border: solid whitesmoke 1px;
+  width: 30%;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.notLogedInHome_About_us {
+  margin-top: 24px;
+  border-bottom: whitesmoke solid 1px;
+}
+
+.notLogedInHome_massage {
+  margin-bottom: 36px;
+}
+.notLogedInHome_log_reg {
+  display: flex;
+  display: inline-block;
+  justify-content: space-around;
+}
+
+.notLogedInHome_log_reg button {
+  background-color: rgba(65, 47, 15, 0.548);
+  margin-top: 42px;
+  width: 100px;
+  height: 42px;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  transition: transform 0.2s;
+}
+
+.notLogedInHome_log_reg button:hover {
+  transform: scale(1.3);
+}

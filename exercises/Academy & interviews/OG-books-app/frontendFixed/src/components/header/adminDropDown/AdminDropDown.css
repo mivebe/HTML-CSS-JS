@@ -1,0 +1,15 @@
+.dropdown-toggle {
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  outline: none;
+  margin-right: 6px;
+}
+
+.dropdown-toggle :hover {
+  background-color: whitesmoke;
+}
+
+.dropdown-toggle :active {
+  background-color: whitesmoke;
+}

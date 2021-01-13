@@ -1,0 +1,9 @@
+.review {
+  display: flex;
+}
+.review-with-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+}

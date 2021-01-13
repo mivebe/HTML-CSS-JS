@@ -1,0 +1,22 @@
+.create-modal {
+  text-align: -webkit-center;
+  position: fixed;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.719);
+  left: 20%;
+  right: 20%;
+  top: 25%;
+  opacity: 1;
+  padding: 5%;
+  color: whitesmoke;
+  border-radius: 16px;
+  border: solid gray 1px;
+}
+.review-error {
+  color: whitesmoke;
+}
+
+#update_review_cancel {
+  color: whitesmoke;
+  width: 5vw;
+}

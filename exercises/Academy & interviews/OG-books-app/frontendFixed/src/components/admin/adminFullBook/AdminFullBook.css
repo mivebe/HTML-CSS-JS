@@ -1,0 +1,18 @@
+.bookName-change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookName-change-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name-textbox {
+  font-size: x-large;
+}
+.borrowed-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

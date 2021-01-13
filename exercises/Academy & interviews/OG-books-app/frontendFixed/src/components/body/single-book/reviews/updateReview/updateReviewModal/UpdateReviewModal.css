@@ -1,0 +1,28 @@
+.update-modal {
+  text-align: -webkit-center;
+  position: fixed;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.719);
+  left: 20%;
+  right: 20%;
+  top: 25%;
+  opacity: 1;
+  padding: 5%;
+  color: whitesmoke;
+  border-radius: 16px;
+  border: solid gray 1px;
+}
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 39;
+}
+
+#publish_modal_button,
+#cancel_modal_button {
+  color: whitesmoke;
+  margin: 4px;
+}

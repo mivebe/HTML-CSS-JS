@@ -1,0 +1,14 @@
+.book-to-return {
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  background-color: white;
+
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+}
+
+.no-borrowed {
+  text-align: -webkit-center;
+  margin-top: 10%;
+}
