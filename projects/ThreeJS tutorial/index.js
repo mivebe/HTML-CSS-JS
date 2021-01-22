@@ -1,12 +1,10 @@
-const width = window.innerWidth;
-const height = window.innerHeight;
-const ratio = width / height;
+
 const fov = 75;
 const nearPlane = 0.1;
 const farPlane = 1000
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(fov, ratio, nearPlane, farPlane);
+const camera = new THREE.PerspectiveCamera(fov, window.innerWidth / window.innerHeight, nearPlane, farPlane);
 camera.position.z = 5;
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -16,7 +14,7 @@ renderer.setSize(width, height);
 document.body.appendChild(renderer.domElement);
 
 window.addEventListener("resize", () => {
-    renderer.setSize(width, height);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     camera.aspect = ratio;
     camera.updateProjectionMatrix();
 })
@@ -48,8 +46,8 @@ const render = () => {
 const onMouseMove = (e) => {
     e.preventDefault();
 
-    mouse.x = (e.clientX / width) * 2 - 1;
-    mouse.y = -(e.clientY / height) * 2 + 1;
+    mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
 
     raycaster.setFromCamera(mouse, camera);
 
