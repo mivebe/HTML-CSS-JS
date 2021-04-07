@@ -109,7 +109,7 @@
         &--3 {
             background-image: linear-gradient(to right bottom, 
             rgba($color-tertiary-light, .85), 
-            rgba($color-tertiary-dark, .85)); 
+            rgba($color-tertiary-dark, .85));
         }
     }
 
@@ -133,8 +133,8 @@
         }
     }
 
-    // BACK SIDE STYLING
-    &__call-to-action {
+    // FRONT SIDE STYLING
+    &__cta {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -149,7 +149,7 @@
         margin-bottom: 8rem;
     }
 
-    &__price-text {
+    &__price-only {
         font-size: 1.4rem;
         text-transform: uppercase;
     }
@@ -193,7 +193,7 @@
         }
 
         // FRONT SIDE STYLING
-        &__call-to-action {
+        &__cta {
             position: relative;
             top: 0%;
             left: 0;
