@@ -839,7 +839,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1500;
-  opacity: 0;
+  display: none;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
@@ -876,10 +876,10 @@ body {
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(140); }
+  transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
+  display: inline-block;
   width: 100%; }
 
 .navigation__icon {

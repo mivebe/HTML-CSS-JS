@@ -56,7 +56,8 @@
         left: 0;
         z-index: 1500;
 
-        opacity: 0;
+        display: none;
+        // opacity: 0;
         width: 0;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
@@ -106,11 +107,12 @@
 
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
-        transform: scale(140);
+        transform: scale(80);
     }
 
-    &__checkbox:checked ~ &__nav {
-        opacity: 1;
+    &__checkbox:checked ~ &__nav{
+        display: inline-block;
+        // opacity: 1;
         width: 100%;
     }
 
