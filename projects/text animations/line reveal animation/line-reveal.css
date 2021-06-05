@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+h1{
+    position: relative;
+    font-size: 6rem;
+    color: white;
+    -webkit-text-stroke:0.3vw black;
+}
+h1::before{
+    content: attr(text-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: darkred;
+    -webkit-text-stroke: 0vw blue;
+    border-right: .5rem solid darkred;
+    overflow: hidden;
+    white-space: nowrap;
+    /* animation: reveal 6s linear; */
+    animation: reveal2 2s linear , typeline 1s 2s linear infinite;
+    /* animation: typeline 2s 6s linear infinite; */
+}
+
+/* this animation goes back to start */
+/* @keyframes reveal {
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+} */
+
+@keyframes reveal2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes typeline {
+    0%{    width: 100%;
+        border-right: .5rem solid darkred;
+    }
+    100%{
+        width: 100%;
+        border-right-style: none;
+    }
+}
