@@ -1,0 +1,14 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #switches_container form{
+    display: flex;
+  }
+
+#chart-container {
+  height: 80vh;
+}
