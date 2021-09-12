@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task_4</title>
     <link rel="stylesheet" href="./task_4.css">
+    <script src="task_4.js" defer></script>
 
 </head>
 
@@ -14,6 +15,7 @@
     <div id="container">
         <input id="file-input" type="file" onchange='handleFileChange(event)' />
     </div>
+
     <div id="switches_container">
         <form id="time-period">
             <input type="radio" id="days" name="time-period_switch" value="Day">
@@ -22,9 +24,10 @@
             <label for="months">Month</label>
         </form>
     </div>
-    <div id="chart-container"></div>
-    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
-    <script src="task_4.js"></script>
+
+    <div id="graph_container"></div>
+    <div id="metrics"></div>
+
 </body>
 
 </html>
