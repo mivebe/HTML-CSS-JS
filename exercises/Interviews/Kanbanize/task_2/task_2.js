@@ -29,12 +29,25 @@ var WeekDays;
     WeekDays[WeekDays["Sunday"] = 7] = "Sunday";
 })(WeekDays || (WeekDays = {}));
 function getNextWorkDay(start, end, date) {
-    // check whether date is within given week
-    //if not skip weekend
-    if (date.getDay() == 2) // sunday
-        date.setDate(date.getDate() + 1);
-    else if (date.getDay() == 1) // saturday
-        date.setDate(date.getDate() + 2);
-    return date.getDate();
+    const dayOfWeek = date.getDay() ? date.getDay() : 7;
+    const dateCopy = date;
+    if (start < end) {
+        if (dayOfWeek >= start && dayOfWeek <= end) {
+            return date.toLocaleDateString();
+        }
+        else {
+            dateCopy.setDate(date.getDate() + (start - dayOfWeek + 7) % 7);
+            return dateCopy.toLocaleDateString();
+        }
+    }
+    else {
+        if (dayOfWeek >= start || dayOfWeek <= end) {
+            return date.toLocaleDateString();
+        }
+        else {
+            dateCopy.setDate(date.getDate() + (start - dayOfWeek + 7) % 7);
+            return dateCopy.toLocaleDateString();
+        }
+    }
 }
-console.log(getNextWorkDay(WeekDays.Monday, WeekDays.Friday, new Date(2021, 9, 5, 12, 0, 0, 0)));
+console.log(getNextWorkDay(WeekDays.Monday, WeekDays.Friday, new Date(2021, 9, 5)));
