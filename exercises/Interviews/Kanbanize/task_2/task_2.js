@@ -33,21 +33,21 @@ function getNextWorkDay(start, end, date) {
     const dateCopy = date;
     if (start < end) {
         if (dayOfWeek >= start && dayOfWeek <= end) {
-            return date.toLocaleDateString();
+            return date.toUTCString();
         }
         else {
             dateCopy.setDate(date.getDate() + (start - dayOfWeek + 7) % 7);
-            return dateCopy.toLocaleDateString();
+            return dateCopy.toUTCString();
         }
     }
     else {
         if (dayOfWeek >= start || dayOfWeek <= end) {
-            return date.toLocaleDateString();
+            return date.toUTCString();
         }
         else {
             dateCopy.setDate(date.getDate() + (start - dayOfWeek + 7) % 7);
-            return dateCopy.toLocaleDateString();
+            return dateCopy.toUTCString();
         }
     }
 }
-console.log(getNextWorkDay(WeekDays.Monday, WeekDays.Friday, new Date(2021, 9, 5)));
+console.log(getNextWorkDay(WeekDays.Monday, WeekDays.Friday, new Date("2021-09-13")));
